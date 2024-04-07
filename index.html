@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip portfolio</title>
+    <title>Valvis Philip Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
 </head>
+
+
 <body>
     <header>
         <div id="sound">
             <audio id="myAudio">
-                <source src="./Night.mp3">
+                <source src="./Symphony of the Digital Realm.mp3">
             </audio>
             <i class="fab fa-soundcloud sound-cloud"></i>
             <span>Sound</span>
@@ -39,16 +43,15 @@
             </div>
 
             <nav class="nav-links">
-                <a href="#">About</a>
-                <a href="#">My Skills</a>
-                <a href="#">Work</a>
+				<a href="#section-work">Collaborations</a>
+                <a href="#section-about">About me</a>
                 <a href="#">Blog</a>
-                <a href="https://www.linkedin.com/in/valvisphilip/">Contact</a>
+                <a href="#">Contact</a>
             </nav>
             <!-- social icons -->
             <ul class="social-icons">
                 <li>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/valvisphilip/">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
@@ -87,27 +90,7 @@
 			<canvas id="nokey" width="800" height="800" style=" display: block;position: fixed;top: 0;left: 0;z-index:-1"/>
         </div>
 		
-		<!--
-		<style>
-		*{
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		}
-		html, body{
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		background-color: #333;
-		overflow: hidden;
-	}
-	canvas{
-    background-color: #1234;
-	}
-		</style> -->
 		
-		
-
-        <!--  -->
         <div class="scroll-down">
             <span>scroll down</span>
             <i class="fas fa-arrow-down"></i>
@@ -119,30 +102,20 @@
         </div>
     </section>
 
-    <!-- part 2 starts here  --> <!-- part 2 starts here  --> <!-- part 2 starts here  -->
     <section id="section-work">
         <div id="header">
-            <h2>My Portfolio</h2>
+            <h2>Collaborations</h2>
         </div>
         <div class="text-zone-2">
             <div>
-                <p>A small gallery of recent projects chosen by me.
-                    I've done them all together with amazing people from companies around the globe. 
-                    It's only a drop in the ocean compared to the entire list.
+                <p>In my carrier I had the opportunity of having work with both multinational and local bank institutions.
+                    I've done projects together with amazing people from around the globe. 
+                    It's only a drop in the ocean compared to the things yet to come.
                     <br>
-                    interested to see some more? Visit <a href="#">my work</a> page
+                    <!--interested to see some more? Visit <a href="#">my work</a> page-->
                 </p>
             </div>
             <!-- my portfolio button -->
-            <a href="https://www.linkedin.com/in/valvisphilip/" class="contact-button">
-                <div>
-                    <span class="bg"></span>
-                    <span class="base"></span>
-                    <span class="text">
-                        Contact me!
-                    </span>
-                </div>
-            </a>
         </div>
         <div class="fake-big-2">Work</div>
     </section>
@@ -237,11 +210,11 @@
 
         <div class="text-zone3">
             <div id="header">
-                <h2>Me, Myself and I</h2>
+                <h2>Some (boring) info about me</h2>
             </div>
 
-            <p>Since Adobe Flash was a complete innovation, alongside with CSS 1.0 
-                and HTML 4.01 as standards of the current web I've been passionate about web.
+            <p>Since my childhood I always been fascinated on how computer software works,  
+                I have .
             </p>
             <p>
                 For over a decade I had many opportunities to work in a vast spectrum of 
@@ -258,24 +231,27 @@
 
         <div class="skills-charts">
             <div id="myCanvasContainer">
-                <canvas width="500" height="500" id="myCanvas">
+                <canvas width="500" height="500" id="myCanvas" onclick="return false;">
                     <ul id="tags">
                         <li><a>FinTech</a></li>
                         <li><a>Banking</a></li>
-                        <li><a>Quality Assurance (QA)</a></li>
+						<li><a>Softskills</a></li>
+						<li><a>Fast Learning</a></li>
+						<li><a>Thirst for knowledge</a></li>
+						<li><a>Constant Improvement</a></li>
+						<li><a>Agile Methodologies</a></li>
                         <li><a>Manual Testing</a></li>
-			<li><a>Software Testing</a></li>
+						<li><a>Software Testing</a></li>
                         <li><a>Automation Testing</a></li>
-                        <li><a>APIs (REST/SOAP)</a></li>
+                        <li><a>APIs (REST/SOAP) - Open banking BaaS</a></li>
                         <li><a>SQL</a></li>
-                        <li><a>Data Science</a></li>
-                        <li><a>Programming (e.g. Python, JavaScript)</a></li>
-                        <li><a>Javascript</a></li>
-                        <li><a>Agile Methodologies</a></li>
-                        <li><a>Regression Testing</a></li>
-                        <li><a>Continuous Integration/Continuous Deployment (CI/CD)</a></li>
-                        <li><a>UI Testing</a></li>
-                        <li><a>User Acceptance Testing (UAT)</a></li>  
+                        <li><a>Python</a></li>
+						<li><a>JavaScript</a></li>
+						<li><a>Selenium</a></li>
+                        <li><a>End-to-End Testing</a></li>
+						<li><a>User Acceptance Testing (UAT)</a></li>    
+						<li><a>UI Testing</a></li>
+						<li><a>API Testing</a></li>
                     </ul>
                 </canvas>
             </div>
@@ -393,7 +369,6 @@
                     <div class="blog-post-content">
                         Number Representation: Formats Human beings have ten fingers. It is a...		
 		    </div>
-    
                 </div>
             </article>
 
