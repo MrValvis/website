@@ -7,9 +7,7 @@
     <title>Philip portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <script type="text/javascript" src="path-to-javascript-file.js"></script>
 </head>
-    
 <body>
     <header>
         <div id="sound">
@@ -37,7 +35,7 @@
                     <img src="images/logo.png" alt="logo">
                     <span>Philip</span>
                 </a>
-                <span>QA Engineer</span>
+                <span>Quality Assurance Engineer</span>
             </div>
 
             <nav class="nav-links">
@@ -71,11 +69,12 @@
     <!-- text zone  section one-->
     <section id="section-home" class="section-home">
         <div class="text-zone">
-            <h1>Hi, <br> I'm Philip, <br> Quality Assurance Engineer
+            <h1>Hi, <br> I'm Philip, <br> web developer
             </h1>
-            <p class="gray-text">QA engineer / Banking-FinTech Expert</p>
+            <p class="gray-text">Quality Assurance / Banking-Fintech Expert</p>
             <br>
 
+                <!-- contact button -->
             <a href="#" class="contact-button">
                 <div>
                     <span class="bg"></span>
@@ -86,6 +85,7 @@
                 </div>
             </a>
         </div>
+
         <!--  -->
         <div class="scroll-down">
             <span>scroll down</span>
@@ -97,7 +97,6 @@
             <i class="fas fa-arrow-down"></i>
         </div>
     </section>
-
 
     <!-- part 2 starts here  --> <!-- part 2 starts here  --> <!-- part 2 starts here  -->
     <section id="section-work">
@@ -131,7 +130,7 @@
     <div id="home-magicwall" class="fake-magicwall">
         <ul>
             <li>
-                <div class="magic-wall_item lazyload">
+                <div class="magic-wall_item lazyload" id="modal1">
                     <img src="images/Bez-nazwy-3.jpg" alt="image">
                     <div class="hover-content"></div>
                     <a href="#" class="colorbox"></a>
@@ -139,7 +138,7 @@
             </li>
             <!-- magic wall 1 -->
             <li>
-                <div class="magic-wall_item lazyload">
+                <div class="magic-wall_item lazyload" >
                     <img src="images/3.jpg" alt="image">
                     <div class="hover-content"></div>
                     <a href="#" class="colorbox"></a>
@@ -212,8 +211,231 @@
             <!-- magic wall 10 -->
         </ul>
     </div>
+    <!-- this is the third part the about me section -->
+    <section id="section-about">
+
+        <div class="text-zone3">
+            <div id="header">
+                <h2>Me, Myself and I</h2>
+            </div>
+
+            <p>Since Adobe Flash was a complete innovation, alongside with CSS 1.0 
+                and HTML 4.01 as standards of the current web I've been passionate about web.
+            </p>
+            <p>
+                For over a decade I had many opportunities to work in a vast spectrum of 
+                <a href="#" class="tech">web technologies</a> 
+                what let me gather a significant amount of various experience.
+                Working for companies and individuals around the globe I met and learnt 
+                from amazing and ambitious people.
+            </p>
+            <p>
+                I currently work remotely with a selected freelance client base being open 
+                for new opportunities.
+            </p>
+        </div>
+
+        <div class="skills-charts">
+            <div id="myCanvasContainer">
+                <canvas width="500" height="500" id="myCanvas">
+                    <ul id="tags">
+                        <li><a href="#" target="_blank">HTML</a></li>
+                        <li><a href="#" target="_blank">CSS</a></li>
+                        <li><a href="#" target="_blank">ES5</a></li>
+                        <li><a href="#" target="_blank">TypeScript</a></li>
+                        <li><a href="#" target="_blank">REST</a></li>
+                        <li><a href="#" target="_blank">JSON</a></li>
+                        <li><a href="#" target="_blank">GSAP</a></li>
+                        <li><a href="#" target="_blank">Data Science</a></li>
+                        <li><a href="#" target="_blank">Wordpress</a></li>
+                        <li><a href="#" target="_blank">PHP</a></li>
+                        <li><a href="#" target="_blank">Python</a></li>
+                        <li><a href="#" target="_blank">Node JS</a></li>
+                        <li><a href="#" target="_blank">Git</a></li>
+                        <li><a href="#" target="_blank">_lodash</a></li>
+                        <li><a href="#" target="_blank">SASS</a></li>
+                        <li><a href="#" target="_blank">JQuery</a></li>
+                        <li><a href="#" target="_blank">SQI</a></li>
+                        <li><a href="#" target="_blank">Gulp</a></li>
+                        <li><a href="#" target="_blank">npm</a></li>
+                        <li><a href="#" target="_blank">BEM</a></li>
+                    </ul>
+                </canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- the about section ends here -->
+
+    <!-- blog section starts here -->
+    <!-- BLOG SECTION -->
+        
+    <section data-load="blog" id="section-blog" class="section-full section-blog js-way">
+
+        <div class="fake-big-2">Blog</div>
+    
+        <!-- blog articles wrapper -->
+        <div class="blog-articles">
+    
+            <!-- Blog articles card 1--> 
+            <article class="post-articles" style="border-top: 2px solid#81D8F7">
+                <div class="post-content">
+                    <time class="post-date" style="color:#81D8F7;"> Computer Science</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2354" href="#">
+                                Algorithms and Data Structures (Part 1)		
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        For the last 20 years, Google has been the main search...		
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog articles card 2-->
+            <article class="post-articles" style="border-top: 2px solid #f50057;">
+                <div class="post-content">
+                    <time class="post-date" style="color:#f50057;"> Web Development</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2182" href="#">
+                                React JS Questions &#038; Answers (Part 1) 2021				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        What is JSX? JSX is a superset of JavaScript that allows...		
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog articles card 3-->
+            <article class="post-articles" style="border-top: 2px solid orange;">
+                <div class="post-content">
+                    <time class="post-date" style="color: orange;">JavaScript</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2113" href="#">
+                                Javascript Interview Questions &#038; Answers (Part 1)				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        What are the possible ways to create objects in JavaScript? There...		
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Blog articles card 4-->
+            <article class="post-articles" style="border-top: 2px solid orange;">
+                <div class="post-content">
+                    <time class="post-date" style="color: orange;"> JavaScript</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2037" href="#">
+                                How to Sort Arrays in JavaScript?				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        In this article, we‟ll discuss how you can sort arrays in...		
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Blog articles card 5-->
+            <article class="post-articles" style="border-top: 2px solid #08fdd8">
+                <div class="post-content">
+                    <time class="post-date" style="color: #08fdd8;"> HTML &amp; CSS</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="1900" href="#">
+                                Ultimate Guide to CSS Grid Layout (Part 1)				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        Grid Container Grid Columns Grid Rows Grid Gaps &nbsp; CSS Grid...		
+                    </div> 
+                </div>
+            </article>
+
+            <!-- Blog articles card 6 -->
+            <article class="post-articles" style="border-top: 2px solid #81D8F7;">
+                <div class="post-content">
+                    <time class="post-date" style="color:#81D8F7;">Computer Science</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2312" href="#">
+                                Information Representation (Part 1)				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        Number Representation: Formats Human beings have ten fingers. It is a...		
+		    </div>
+    
+                </div>
+            </article>
+
+            <!-- Blog articles card 7 -->
+            <article class="post-articles" style="border-top: 2px solid #08fdd8">
+                <div class="post-content">
+                    <time class="post-date" style="color:#08fdd8"> HTML &amp; CSS</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2019" href="#">
+                                How to use System Fonts in CSS to improve your site?				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        How to use System Fonts in CSS to improve your site...		
+                    </div>    
+                </div>
+            </article>
+    
+            <!-- Blog articles card 8 -->
+            <article class="post-articles" style="border-top: 2px solid #08fdd8">
+                <div class="post-content">
+                    <time class="post-date" style="color: #08fdd8"> HTML &amp; CSS</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2000" href="#">
+                                What is PostCSS and what does it do?				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        PostCSS is a very popular tool that allows developers to write...		
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog articles card 9-->
+            <article class="post-articles" style="border-top:2px solid #81D8F7">
+                <div class="post-content">
+                    <time class="post-date" style="color:#81D8F7;"> Computer Science</time>
+                    <div class="blog-post-title">
+                        <h5>
+                            <a data-id="2301" href="#">
+                                Basic Concepts of Data Processing (Part 2)				
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="blog-post-content">
+                        Languages, Syntax, and Semantics Now that we understand that machines work...		
+                    </div>
+                </div>
+            </article>            
+            </div>
+        </section>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./jquery.tagcanvas.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
