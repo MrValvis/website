@@ -11,6 +11,7 @@ body{
     font-family: sans-serif;
     color: rgb(255, 255, 255);
     background: rgb(29, 29, 29);
+    overflow-x: hidden;
 }
 header{
     width: 95%;
@@ -361,13 +362,79 @@ header{
     transform: scale(0.6);
     opacity: 1;
 }
+/* magical wall ends here */
+
+/* part 3 section starts here */
+
+#section-about{
+    padding-left: 1.5rem;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.text-zone3 p{
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+}
+.tech{
+    text-decoration: none;
+    color: #08fdd8;
+}
+/* blog section starts here */
+.section-blog{
+    width: 85%;
+    margin: 100px auto 0;
+    position: relative;
+}
+.section-blog .fake-big-2{
+    font-size: 12rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -180px;
+    left: 0;
+    
+}
+
+.blog-articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.post-articles{
+    width: 100%;
+    height: 220px;
+    background-color: #1d1d1d;
+    padding: 25px;
+    color: #909096;
+    box-shadow: 0 0  5px 5px #191919;
+    margin-bottom: 30px;
+}
+.post-date{
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.blog-post-title h5 a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+}
+.blog-post-title h5 a:hover{
+    color: #06b99e;
+}
+
 
 
 
 /* media section for bigger screens */
 
-
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1200px) {
     header{
         justify-content: flex-end;
         align-items: flex-end;
@@ -423,8 +490,6 @@ header{
         left: 110px;
         right: auto;
     }
-    /* this is tht end of section home */
-
     /* part 2 media query bigger screens starts here */
     #section-work{
         width: 85%;
@@ -459,6 +524,44 @@ header{
         height: 236px;
     }
 
+    /* media query for about section */
+    #section-about{
+        flex-direction: row;
+        padding-left: 13rem;
+    }
+    .text-zone3 #header{
+        width: 500px;
+        font-size: 3rem;
+    }
+    .text-zone3 p{
+        width: 400px;
+    }
+    .skills-charts{
+        margin-right: 20%;
+    }
 
+    /* media query for blog section */
+    .section-blog{
+        width: 90%;
+        margin: 100px auto 0;
+    }
+    .section-blog .fake-big-2{
+        font-size: 27rem;
+        top: -270px;
+    }
+    .blog-articles{
+        width: 90%;
+        margin: 0 0 0 auto;
+        flex-flow: row wrap;
+    }
+    .post-articles{
+        width: 340px;
+        height: 270px;
+    }
+    .blog-post-title h5 a{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
 
+    
 }
