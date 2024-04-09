@@ -25,11 +25,15 @@ const soundTrack = (soundState) => {
 
 const btnBars = document.querySelector('.bars');
 const btnTimes = document.querySelector('.times');
+const NavLinks = document.querySelector('.nav-links');
 const SideNav = document.querySelector('.aside');
 
 
-btnBars.addEventListener('click', () => myFunc('open'));
-btnTimes.addEventListener('click', () => myFunc('close'));
+
+
+btnBars.addEventListener('click', () => myFunc('open')); // User pressed burger menu
+btnTimes.addEventListener('click', () => myFunc('close')); // User pressed burger menu X
+NavLinks.addEventListener('click', () => myFunc('close')); // User pressed navlink
 
 const myFunc = (navCondition) => {
     if(navCondition === 'open'){
@@ -45,7 +49,6 @@ const myFunc = (navCondition) => {
 }
 
 
-// Part 1 javascript functionality ends here
 $(document).ready(function (){
     if(!$("#myCanvas").tagcanvas({
         textColour: "#08fdd8",
