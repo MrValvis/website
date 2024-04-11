@@ -727,24 +727,28 @@
       return e.target && Defined(e.target.id) ? e.target.id :
         e.srcElement.parentNode.id;
     }
+	/* Canvas rotation */
     function EventXY(e, c) {
-      var xy, p, xmul = parseInt(GetProperty(c, 'width')) / c.width,
-        ymul = parseInt(GetProperty(c, 'height')) / c.height;
-      if(Defined(e.offsetX)) {
-        xy = {x: e.offsetX, y: e.offsetY};
-      } else {
-        p = AbsPos(c.id);
-        if(Defined(e.changedTouches))
-          e = e.changedTouches[0];
-        if(e.pageX)
-          xy = {x: e.pageX - p.x, y: e.pageY - p.y};
-      }
-      if(xy && xmul && ymul) {
-        xy.x /= xmul;
-        xy.y /= ymul;
-      }
-      return xy;
-    }
+		var xy, p, xmul = parseInt(GetProperty(c, 'width')) / c.width,
+		ymul = parseInt(GetProperty(c, 'height')) / c.height;
+		if (Defined(e.offsetX)) {
+			// Reverse horizontal and vertical rotation
+			xy = { x: c.width - e.offsetX, y: c.height - e.offsetY };
+		} 
+		else {
+			p = AbsPos(c.id);
+			if (Defined(e.changedTouches))
+				e = e.changedTouches[0];
+			if (e.pageX)
+				// Reverse horizontal and vertical rotation
+				xy = { x: c.width - (e.pageX - p.x), y: c.height - (e.pageY - p.y) };
+		}
+		if (xy && xmul && ymul) {
+			xy.x /= xmul;
+			xy.y /= ymul;
+		}
+		return xy;
+	}
     function MouseOut(e) {
       var cv = e.target || e.fromElement.parentNode, tc = TagCanvas.tc[cv.id];
       if(tc) {
@@ -1615,10 +1619,13 @@
           handlers[cid].push(['mousedown', MouseDown]);
           handlers[cid].push(['selectstart', Nop]);
         }
+		/*zoom is disabled*/
+		/*
         if(this.wheelZoom) {
           handlers[cid].push(['mousewheel', MouseWheel]);
           handlers[cid].push(['DOMMouseScroll', MouseWheel]);
         }
+		*/
         if(this.scrollPause) {
           handlers[cid].push(['scroll', Scroll, window]);
         }
