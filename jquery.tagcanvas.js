@@ -1,3 +1,23 @@
+// Get a reference to the canvas element
+var canvas = document.getElementById('myCanvas');
+
+// Function to set canvas size based on device width
+function setCanvasSize() {
+    if (window.innerWidth < 768) { // Mobile resolution
+        canvas.width = 300; // Set a smaller width for mobile
+        canvas.height = 300; // Set a smaller height for mobile
+    } else { // Desktop resolution
+        canvas.width = 500; // Set the default width for desktop
+        canvas.height = 500; // Set the default height for desktop
+    }
+}
+// Call setCanvasSize() initially to set the canvas size
+setCanvasSize();
+// Listen for window resize events and adjust canvas size accordingly
+window.addEventListener('resize', setCanvasSize);
+
+
+//Library for visual effect
 (function($){
     "use strict";
     var i, j, abs = Math.abs, sin = Math.sin, cos = Math.cos, max = Math.max,
@@ -2454,3 +2474,5 @@
     // set a flag for when the window has loaded
     AddHandler('load',function(){TagCanvas.loaded=1},window);
     })(jQuery);
+	
+	
