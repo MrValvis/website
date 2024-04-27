@@ -62,3 +62,16 @@ $(document).ready(function (){
         $("#myCanvasContainer");
     }
 })
+
+
+
+// Define a function to initialize Google Analytics tracking
+function initializeGoogleAnalytics() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-61GVZYR2QX');
+}
+
+// Call the function to initialize Google Analytics tracking
+initializeGoogleAnalytics();
