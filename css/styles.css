@@ -579,17 +579,17 @@ body{
     }
 
     .aside {
-        width: 10%;
+        width: 5%;
         height: 100%;
     }
     .aside-wrapper {
         height: 80%;
     }
     .logo-section {
-        min-height: 25vh;
+        min-height: 20vh;
     }
     .logo img {
-        width: 50px;
+        width: 40px;
         height: auto;
     }
     .social-icons {
@@ -597,37 +597,37 @@ body{
         text-align: center;
     }
     .social-icons li {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* home section */
     #section-home {
-        padding-left: 13rem;
+        padding-left: 5rem;
     }
     .text-zone h1 {
-        font-size: 6.3rem;
-        line-height: 85px;
-        letter-spacing: -6px;
+        font-size: 4rem;
+        line-height: 60px;
+        letter-spacing: -4px;
     }
     .text-zone img {
-        width: 50px;
-        height: 72px;
+        width: 40px;
+        height: 60px;
     }
     .text-zone .gray-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .scroll-down {
-        right: -30px;
-        bottom: 3.3rem;
+        right: -20px;
+        bottom: 2rem;
     }
     .scroll-down--left {
-        left: 110px;
+        left: 60px;
         right: auto;
     }
 	
     #section-work {
-        width: 85%;
-        margin: 0 30px 0 auto;
+        width: 80%;
+        margin: 0 20px 0 auto;
         display: flex;
         flex-direction: column;
     }
@@ -637,64 +637,64 @@ body{
         align-items: center;
     }
     #header {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .text-zone-2 p {
-        width: 700px;
-        font-size: 14px;
-        line-height: 1.5rem;
+        width: 600px;
+        font-size: 1rem;
+        line-height: 1.3rem;
     }
     .fake-big-2 {
-        font-size: 25rem;
+        font-size: 20rem;
         font-weight: 700;
-        left: 560px;
+        left: 400px;
         top: 0;
     }
     .fake-magicwall {
-        padding-left: 15rem;
+        padding-left: 8rem;
     }
     .fake-magicwall ul li {
-        width: 242px;
-        height: 236px;
+        width: 180px;
+        height: 180px;
     }
 
     /* media query for about section */
     #section-about {
         flex-direction: row;
-        padding-left: 13rem;
+        padding-left: 5rem;
     }
     .text-zone3 #header {
-        width: 500px;
-        font-size: 3rem;
+        width: 400px;
+        font-size: 2.5rem;
     }
     .text-zone3 p {
-        width: 400px;
+        width: 300px;
     }
     .skills-charts {
-        margin-right: 20%;
+        margin-right: 10%;
     }
 
     /* media query for portfolio section */
     .section-blog {
-        width: 90%;
-        margin: 100px auto 0;
+        width: 85%;
+        margin: 50px auto 0;
     }
     .section-blog .fake-big-2 {
-        font-size: 27rem;
-        top: -270px;
+        font-size: 22rem;
+        top: -200px;
     }
     .blog-articles {
-        width: 90%;
-        margin: 0 0 0 auto;
+        width: 85%;
+        margin: 0 auto;
         flex-flow: row wrap;
     }
     .post-articles {
-        width: 340px;
-        height: 270px;
+        width: 300px;
+        height: 240px;
     }
     .blog-post-title h5 a {
-        font-size: 1.7rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
     }
 }
 
