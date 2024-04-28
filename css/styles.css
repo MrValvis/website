@@ -299,12 +299,13 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .fake-magicwall ul{
-/*list-style-type: none; padding: 0;*/
+    list-style-type: none; 
     list-style: none;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-box;
     flex-wrap: wrap;
+    padding-left:2em;
 }
 .fake-magicwall ul li{
     width: 161px;
@@ -632,6 +633,7 @@ body{
         display: flex;
         flex-direction: column;
     }
+	
     .text-zone-2 {
         display: flex;
         justify-content: space-between;
@@ -645,6 +647,10 @@ body{
         font-size: 14px;
         line-height: 1.5rem;
     }
+    #header p {
+    	width: 800px;
+    }
+	
     .fake-big-2 {
         font-size: 25rem;
         font-weight: 700;
@@ -653,6 +659,9 @@ body{
     }
     .fake-magicwall {
         padding-left: 15rem;
+    }
+    .fake-magicwall ul {
+	    padding-left: 2em;
     }
     .fake-magicwall ul li {
         width: 242px;
@@ -783,6 +792,9 @@ body{
     }
     .fake-magicwall {
         padding-left: 15rem;
+    }
+    .fake-magicwall ul {
+	padding-left: 2em;
     }
     .fake-magicwall ul li {
         width: 242px;
