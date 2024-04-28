@@ -567,124 +567,264 @@ body{
     
 }
 
-/* Common styles for all resolutions */
-header {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
 
-.logo img {
-    max-width: 100%;
-    height: auto;
-}
-
-.social-icons li {
-    font-size: 1rem;
-}
-
-/* For 2k resolutions and above */
+/* For 2k resolutions */
 @media screen and (min-width: 2560px) {
+    header {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .btns-container {
+        display: none;
+    }
+
     .aside {
-        width: 15%;
+        width: 10%;
         height: 100%;
     }
-
-    #section-home,
-    #section-about,
-    #section-work,
-    .section-blog {
-        padding-left: 10%;
-        padding-right: 10%;
+    .aside-wrapper {
+        height: 80%;
     }
-
-    .text-zone h1 {
-        font-size: 4rem;
+    .logo-section {
+        min-height: 25vh;
     }
-
-    .text-zone img {
-        max-width: 100px;
+    .logo img {
+        width: 50px;
         height: auto;
     }
-
-    .text-zone .gray-text {
+    .social-icons {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .social-icons li {
         font-size: 1rem;
     }
 
-    .scroll-down--left {
-        left: 4%;
+    /* home section */
+    #section-home {
+        padding-left: 13rem;
     }
-
-    #section-work {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .text-zone-2 p {
-        width: 70%;
-    }
-
-    .fake-magicwall {
-        padding-left: 5%;
-    }
-
-    .fake-magicwall ul li {
-        width: 180px;
-        height: 180px;
-    }
-
-    .skills-charts {
-        margin-right: 10%;
-    }
-}
-
-/* Additional adjustments for 4k resolutions */
-@media screen and (min-width: 3840px) {
-    .aside {
-        width: 12%;
-    }
-
-    #section-home,
-    #section-about,
-    #section-work,
-    .section-blog {
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-
     .text-zone h1 {
-        font-size: 5rem;
+        font-size: 6.3rem;
+        line-height: 85px;
+        letter-spacing: -6px;
     }
-
     .text-zone img {
-        max-width: 120px;
+        width: 50px;
+        height: 72px;
     }
-
     .text-zone .gray-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
-
+    .scroll-down {
+        right: -30px;
+        bottom: 3.3rem;
+    }
     .scroll-down--left {
-        left: 6%;
+        left: 110px;
+        right: auto;
     }
-
+	
     #section-work {
-        width: 75%;
+        width: 85%;
+        margin: 0 30px 0 auto;
+        display: flex;
+        flex-direction: column;
     }
-
+    .text-zone-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header {
+        font-size: 2.5rem;
+    }
     .text-zone-2 p {
-        width: 65%;
+        width: 700px;
+        font-size: 14px;
+        line-height: 1.5rem;
     }
-
+    .fake-big-2 {
+        font-size: 25rem;
+        font-weight: 700;
+        left: 560px;
+        top: 0;
+    }
     .fake-magicwall {
-        padding-left: 8%;
+        padding-left: 15rem;
     }
-
     .fake-magicwall ul li {
-        width: 200px;
-        height: 200px;
+        width: 242px;
+        height: 236px;
     }
 
+    /* media query for about section */
+    #section-about {
+        flex-direction: row;
+        padding-left: 13rem;
+    }
+    .text-zone3 #header {
+        width: 500px;
+        font-size: 3rem;
+    }
+    .text-zone3 p {
+        width: 400px;
+    }
     .skills-charts {
-        margin-right: 8%;
+        margin-right: 20%;
+    }
+
+    /* media query for portfolio section */
+    .section-blog {
+        width: 90%;
+        margin: 100px auto 0;
+    }
+    .section-blog .fake-big-2 {
+        font-size: 27rem;
+        top: -270px;
+    }
+    .blog-articles {
+        width: 90%;
+        margin: 0 0 0 auto;
+        flex-flow: row wrap;
+    }
+    .post-articles {
+        width: 340px;
+        height: 270px;
+    }
+    .blog-post-title h5 a {
+        font-size: 1.7rem;
+        line-height: 2rem;
     }
 }
+
+/* For 4k resolutions */
+@media screen and (min-width: 3840px) {
+    header {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .btns-container {
+        display: none;
+    }
+
+    .aside {
+        width: 10%;
+        height: 100%;
+    }
+    .aside-wrapper {
+        height: 80%;
+    }
+    .logo-section {
+        min-height: 25vh;
+    }
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+    .social-icons {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .social-icons li {
+        font-size: 1rem;
+    }
+
+    /* home section */
+    #section-home {
+        padding-left: 13rem;
+    }
+    .text-zone h1 {
+        font-size: 6.3rem;
+        line-height: 85px;
+        letter-spacing: -6px;
+    }
+    .text-zone img {
+        width: 50px;
+        height: 72px;
+    }
+    .text-zone .gray-text {
+        font-size: 1rem;
+    }
+    .scroll-down {
+        right: -30px;
+        bottom: 3.3rem;
+    }
+    .scroll-down--left {
+        left: 110px;
+        right: auto;
+    }
+	
+    #section-work {
+        width: 85%;
+        margin: 0 30px 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-zone-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header {
+        font-size: 2.5rem;
+    }
+    .text-zone-2 p {
+        width: 700px;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .fake-big-2 {
+        font-size: 25rem;
+        font-weight: 700;
+        left: 560px;
+        top: 0;
+    }
+    .fake-magicwall {
+        padding-left: 15rem;
+    }
+    .fake-magicwall ul li {
+        width: 242px;
+        height: 236px;
+    }
+
+    /* media query for about section */
+    #section-about {
+        flex-direction: row;
+        padding-left: 13rem;
+    }
+    .text-zone3 #header {
+        width: 500px;
+        font-size: 3rem;
+    }
+    .text-zone3 p {
+        width: 400px;
+    }
+    .skills-charts {
+        margin-right: 20%;
+    }
+
+    /* media query for portfolio section */
+    .section-blog {
+        width: 90%;
+        margin: 100px auto 0;
+    }
+    .section-blog .fake-big-2 {
+        font-size: 27rem;
+        top: -270px;
+    }
+    .blog-articles {
+        width: 90%;
+        margin: 0 0 0 auto;
+        flex-flow: row wrap;
+    }
+    .post-articles {
+        width: 340px;
+        height: 270px;
+    }
+    .blog-post-title h5 a {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+}
+
