@@ -567,8 +567,7 @@ body{
     
 }
 
-
-/* For 2k resolutions */
+/* Common styles for all resolutions */
 header {
     justify-content: flex-end;
     align-items: flex-end;
@@ -582,6 +581,8 @@ header {
 .social-icons li {
     font-size: 1rem;
 }
+
+/* For 2k resolutions and above */
 @media screen and (min-width: 2560px) {
     .aside {
         width: 15%;
@@ -635,135 +636,55 @@ header {
         margin-right: 10%;
     }
 }
-/* For 4k resolutions */
+
+/* Additional adjustments for 4k resolutions */
 @media screen and (min-width: 3840px) {
-    header {
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .btns-container {
-        display: none;
-    }
-
     .aside {
-        width: 10%;
-        height: 100%;
-    }
-    .aside-wrapper {
-        height: 80%;
-    }
-    .logo-section {
-        min-height: 25vh;
-    }
-    .logo img {
-        width: 50px;
-        height: auto;
-    }
-    .social-icons {
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .social-icons li {
-        font-size: 1rem;
+        width: 12%;
     }
 
-    /* home section */
-    #section-home {
-        padding-left: 13rem;
-    }
-    .text-zone h1 {
-        font-size: 6.3rem;
-        line-height: 85px;
-        letter-spacing: -6px;
-    }
-    .text-zone img {
-        width: 50px;
-        height: 72px;
-    }
-    .text-zone .gray-text {
-        font-size: 1rem;
-    }
-    .scroll-down {
-        right: -30px;
-        bottom: 3.3rem;
-    }
-    .scroll-down--left {
-        left: 110px;
-        right: auto;
-    }
-	
-    #section-work {
-        width: 85%;
-        margin: 0 30px 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .text-zone-2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #header {
-        font-size: 2.5rem;
-    }
-    .text-zone-2 p {
-        width: 700px;
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-    .fake-big-2 {
-        font-size: 25rem;
-        font-weight: 700;
-        left: 560px;
-        top: 0;
-    }
-    .fake-magicwall {
-        padding-left: 15rem;
-    }
-    .fake-magicwall ul li {
-        width: 242px;
-        height: 236px;
-    }
-
-    /* media query for about section */
-    #section-about {
-        flex-direction: row;
-        padding-left: 13rem;
-    }
-    .text-zone3 #header {
-        width: 500px;
-        font-size: 3rem;
-    }
-    .text-zone3 p {
-        width: 400px;
-    }
-    .skills-charts {
-        margin-right: 20%;
-    }
-
-    /* media query for portfolio section */
+    #section-home,
+    #section-about,
+    #section-work,
     .section-blog {
-        width: 90%;
-        margin: 100px auto 0;
-    }
-    .section-blog .fake-big-2 {
-        font-size: 27rem;
-        top: -270px;
-    }
-    .blog-articles {
-        width: 90%;
-        margin: 0 0 0 auto;
-        flex-flow: row wrap;
-    }
-    .post-articles {
-        width: 340px;
-        height: 270px;
-    }
-    .blog-post-title h5 a {
-        font-size: 1.7rem;
-        line-height: 2rem;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 
-    /* Add further modifications for 4k resolutions if needed */
+    .text-zone h1 {
+        font-size: 5rem;
+    }
+
+    .text-zone img {
+        max-width: 120px;
+    }
+
+    .text-zone .gray-text {
+        font-size: 1.2rem;
+    }
+
+    .scroll-down--left {
+        left: 6%;
+    }
+
+    #section-work {
+        width: 75%;
+    }
+
+    .text-zone-2 p {
+        width: 65%;
+    }
+
+    .fake-magicwall {
+        padding-left: 8%;
+    }
+
+    .fake-magicwall ul li {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-charts {
+        margin-right: 8%;
+    }
 }
-
