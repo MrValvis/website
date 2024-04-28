@@ -601,8 +601,9 @@ body{
     }
 
     /* home section */
-    #section-home {
-        padding-left: 13rem;
+    #section-home {    
+    padding-left: 26em;
+
     }
     .text-zone h1 {
         font-size: 6.3rem;
@@ -732,7 +733,7 @@ body{
 
     /* home section */
     #section-home {
-        padding-left: 13rem;
+    	padding-left: 26em;
     }
     .text-zone h1 {
         font-size: 6.3rem;
