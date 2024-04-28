@@ -4,20 +4,20 @@ var canvas = document.getElementById('myCanvas');
 // Function to set canvas size based on device width
 function setCanvasSize() {
     if (window.innerWidth < 768) { // Mobile resolution
-	canvas.width = 300; // Set a smaller width for mobile
+        canvas.width = 300; // Set a smaller width for mobile
         canvas.height = 300; // Set a smaller height for mobile
     } 
-    else if (window.innerWidth >= 768 && window.innerWidth <= 1081) ) {
-	canvas.width = 500; // Set the default width for desktop --FHD
-	canvas.height = 500; // Set the default height for desktop --FHD
+    else if (window.innerWidth >= 768 && window.innerWidth <= 1080) {
+        canvas.width = 500; // Set the default width for desktop --FHD
+        canvas.height = 500; // Set the default height for desktop --FHD
     }
-    else if (window.innerWidth >= 1080 && window.innerWidth <= 2160) ) {
-	canvas.width = 600; // Set the default width for desktop --2K
-	canvas.height = 600; // Set the default height for desktop --2K
+    else if (window.innerWidth >= 1081 && window.innerWidth <= 2160) {
+        canvas.width = 600; // Set the default width for desktop --2K
+        canvas.height = 600; // Set the default height for desktop --2K
     }
     else {
         canvas.width = 700; // Set the default width for desktop --4K
-	canvas.height = 700; // Set the default height for desktop --4K
+        canvas.height = 700; // Set the default height for desktop --4K
     }
 }
 // Call setCanvasSize() initially to set the canvas size
