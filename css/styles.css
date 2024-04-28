@@ -369,6 +369,7 @@ body{
     margin-bottom: 15px;
     line-height: 1.5rem;
 }
+
 .tech{
     text-decoration: none;
     color: #08fdd8;
@@ -647,10 +648,6 @@ body{
         font-size: 14px;
         line-height: 1.5rem;
     }
-    #header p {
-    	width: 800px;
-    }
-	
     .fake-big-2 {
         font-size: 25rem;
         font-weight: 700;
@@ -678,7 +675,7 @@ body{
         font-size: 3rem;
     }
     .text-zone3 p {
-        width: 400px;
+        width: 800px;
     }
     .skills-charts {
         margin-right: 20%;
@@ -811,7 +808,7 @@ body{
         font-size: 3rem;
     }
     .text-zone3 p {
-        width: 400px;
+        width: 1000px;
     }
     .skills-charts {
         margin-right: 20%;
