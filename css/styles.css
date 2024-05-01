@@ -668,7 +668,7 @@ body{
     /* media query for about section */
     #section-about {
         flex-direction: row;
-        padding-left: 26rem;
+        padding-left: 23rem;
     }
     .text-zone3 #header {
         width: 500px;
@@ -714,7 +714,6 @@ body{
     .btns-container {
         display: none;
     }
-
     .aside {
         width: 10%;
         height: 100%;
@@ -736,10 +735,9 @@ body{
     .social-icons li {
         font-size: 1rem;
     }
-
     /* home section */
     #section-home {
-    	padding-left: 26rem;
+    	padding-left: 32rem;
     }
     .text-zone h1 {
         font-size: 6.3rem;
@@ -788,7 +786,7 @@ body{
         top: 0;
     }
     .fake-magicwall {
-        padding-left: 15rem;
+        padding-left: 25rem;
     }
     .fake-magicwall ul {
 	padding-left: 2em;
@@ -801,7 +799,7 @@ body{
     /* media query for about section */
     #section-about {
         flex-direction: row;
-        padding-left: 26rem;
+        padding-left: 32rem;
     }
     .text-zone3 #header {
         width: 500px;
