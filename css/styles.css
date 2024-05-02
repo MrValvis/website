@@ -799,7 +799,7 @@ body{
     /* media query for about section */
     #section-about {
         flex-direction: row;
-        padding-left: 32rem;
+        padding-left: 35rem;
     }
     .text-zone3 #header {
         width: 500px;
