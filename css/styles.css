@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 header{
     width: 95%;
     height: 10vh;
