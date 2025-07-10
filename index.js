@@ -70,7 +70,7 @@ function initializeGoogleAnalytics() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-61GVZYR2QX');
+  gtag('config', 'G-9XLT4K9MDD');
 }
 
 // Call the function to initialize Google Analytics tracking
