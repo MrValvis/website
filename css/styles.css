@@ -307,7 +307,6 @@ body{
     list-style: none;
     display: flex;
     display: -ms-flexbox;
-    display: -webkit-box;
     flex-wrap: wrap;
     padding-left:2em;
 }
