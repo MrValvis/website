@@ -2,24 +2,38 @@ const soundCloud = document.querySelector('.sound-cloud');
 const off = document.querySelector('#off');
 const on = document.querySelector('#on');
 const myAudio = document.querySelector('#myAudio');
+myAudio.loop = true;
 
 off.addEventListener('click', () => soundTrack('off'));
 on.addEventListener('click', () => soundTrack('on'));
 
 const soundTrack = (soundState) => {
-    if(soundState === 'off'){
+    if (soundState === 'off') {
         on.style.display = 'block';
         off.style.display = 'none';
         soundCloud.style.color = "#08fdd8";
+        myAudio.currentTime = 0;
+        myAudio.volume = 1;
         myAudio.play();
-    }
-    else if(soundState === 'on'){
+    } else if (soundState === 'on') {
         on.style.display = 'none';
         off.style.display = 'block';
         soundCloud.style.color = "#f50057";
-        myAudio.pause();
+        fadeOutAudio();
     }
-}
+};
+
+const fadeOutAudio = () => {
+    let fadeAudio = setInterval(() => {
+        if (myAudio.volume > 0.05) {
+            myAudio.volume -= 0.05;
+        } else {
+            clearInterval(fadeAudio);
+            myAudio.pause();
+            myAudio.volume = 1;
+        }
+    }, 50);
+};
 
 // Play music functionality
 
